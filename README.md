@@ -1,12 +1,37 @@
-<h1 align="center">🛠 &nbsp; Descrição em Desenvolvimento 🛠 &nbsp;</h1>
-<p align="left">  </p>
+# My Portfolio
 
-• Este é o meu site pessoal, utilizado para demonstração de portifolio.
+> Building a Portfolio to show what I'm truly capable of as a developer, as well as showing my future recruiters and hiring managers to get an idea of what I can bring to their teams.
 
-<br><br><br><br><br><br><br><br>
 
-<h1 align="center">🛠 &nbsp; Description in Development 🛠 &nbsp;</h1>
-<p align="left">  </p>
+## Demo link
+[Click Here](https://mwapsam.github.io/portifolio/)
 
-• This is my personal site, used for portfolio demonstration.
+Additional description about the project and its features.
 
+## Built With
+
+- Major languages
+- HTML
+- CSS
+
+## Getting Started
+
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- HTML
+- CSS
+
+### Setup
+
+git clone https://github.com/cvrochaa/Portifolio.git
+
+cd portfolio
+
+### Install
+
+npm init -y
