@@ -4,7 +4,7 @@
 
 
 ## Demo link
-[Click Here](https://mwapsam.github.io/portifolio/)
+[Click Here](https://cvrochaa.github.io/Portfolio/)
 
 Additional description about the project and its features.
 
@@ -25,13 +25,3 @@ To get a local copy up and running follow these simple example steps.
 
 - HTML
 - CSS
-
-### Setup
-
-git clone https://github.com/cvrochaa/Portifolio.git
-
-cd portfolio
-
-### Install
-
-npm init -y
