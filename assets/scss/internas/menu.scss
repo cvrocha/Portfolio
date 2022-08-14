@@ -107,7 +107,8 @@
         }
         
         .navbar-mobile {
-            height: calc (100vh - 70px);
+           // height: calc (100vh - 70px);
+            height: 70px;
             position: fixed;
             overflow: hidden;
             top: 0;
