@@ -1,0 +1,40 @@
+body{
+background-color: green !important;
+}
+
+//----------Variaveis----------
+@import "variables.scss";
+
+//----------Páginas internas----------
+//preloader
+@import "internas/preloader.scss";
+//reset css
+@import "internas/reset-bg.scss";
+//Menu
+@import "internas/menu.scss";
+//hero
+@import "internas/hero.scss";
+//sobre
+@import "internas/sobre.scss";
+//skills
+@import "internas/skills.scss";
+//interesses
+@import "internas/interesses.scss";
+//testemunhos
+@import "internas/testemunhos.scss";
+//resumo
+@import "internas/resume.scss";
+//portifolio
+@import "internas/portifolio.scss";
+//contatos
+@import "internas/contatos.scss";
+//creditos
+@import "internas/creditos-footer.scss";
+//contador
+@import "internas/contador.scss";
+//header
+@import "internas/header.scss";
+//section
+@import "internas/section.scss";
+//serviços
+@import "internas/services.scss";
