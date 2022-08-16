@@ -3,7 +3,7 @@
 */
         
         .navbar {
-            text-shadow: 1px 2px 1px black;
+            text-shadow: 1px 2px 2px black;
             padding: 0px;
             margin-top: 30px;
             text-indent: 20px;
@@ -19,9 +19,15 @@
             align-items: center;
         }
         
+        .navbar ul span{
+            display: flex;
+            align-items: center;
+        }
+        
         .navbar li {
             text-shadow: 1px 2px 1px black;
             position: relative;
+            right: 18px;
         }
         
         .navbar li+li {
@@ -58,12 +64,16 @@
             position: absolute;
             width: 0;
             height: 4px;
-            bottom: -4px;
-            left: 0;
+            bottom: 6px;
+            left: 26px;
             background-color: #9F221C;
             visibility: hidden;
             width: 0px;
             transition: all 0.3s ease-in-out 0s;
+        }
+        
+        .nav-link:focus{
+            color: rgba(255, 255, 255, 0.7);
         }
         
         .navbar a:hover:before,
@@ -104,6 +114,11 @@
             .navbar ul {
                 display: none;
             }
+            .navbar a:before {
+                
+            bottom: 10px;
+
+            }
         }
         
         .navbar-mobile {
@@ -114,7 +129,7 @@
             right: 0;
             left: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 1);
             transition: 0.1s;
             z-index: 999;
             margin-top: 0;
@@ -127,13 +142,16 @@
         }
         
         .navbar-mobile ul {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
             position: absolute;
             top: 55px;
             right: 15px;
             bottom: 20px;
+            gap: 35px;
             left: 15px;
-            padding: 0px 0;
             overflow-y: auto;
             transition: 0.3s;
             border: 3px solid #9F221C;
@@ -141,7 +159,7 @@
         }
         
         .navbar-mobile li {
-            padding: 0px 0px;
+            padding: 15px 0px;
         }
         
         .navbar-mobile li+li {
