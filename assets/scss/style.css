@@ -1,7 +1,3 @@
-body {
-  background-color: green !important;
-}
-
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -109,25 +105,28 @@ body {
 
 body {
   font-family: "open sans", sans-serif;
-  background-color: black;
   color: #fff;
   position: relative;
   background: transparent;
 }
 
 body::before {
-  content: "";
+  content: '';
   position: fixed;
-  background: black url("../img/bg.webp") top right no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: cover;
-  background-repeat: no-repeat;
-  left: 0;
-  right: 0;
   top: 0;
+  left: 0;
   height: 100vh;
+  width: 100%;
   z-index: -100;
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://user-images.githubusercontent.com/62439381/185196091-7418b1b1-92fa-4f86-b08e-f0c8bf7706dd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 1024px) {
@@ -1206,11 +1205,9 @@ h2 {
 }
 
 #header h2 span {
-  text-shadow: 2px 3px 5px black;
   color: #fff;
   border-bottom: 3px solid #9F221C;
   text-shadow: 1px 2px 1px black;
-  padding-bottom: 6px;
 }
 
 #header img {
