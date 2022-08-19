@@ -30,8 +30,7 @@
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   background: #9F221C;
 }
 
@@ -96,8 +95,8 @@
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #9F221C;
-  border-left: 3px solid #9F221C;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 9994;
@@ -111,29 +110,25 @@
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #9F221C;
-  border-right: 3px solid #9F221C;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 22px;
-  color: rgb(255, 255, 255);
+  font-size: 20px;
+  color: #fff;
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  text-shadow: 3px 2px 7px #000000;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 4px 7px #000000;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -144,7 +139,7 @@
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 2px;
-  font-size: 40px;
+  font-size: 28px;
   display: inline-block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -167,13 +162,13 @@
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 0px;
-  left: 0px;
+  top: 15px;
+  left: 15px;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 0px;
-  right: 0px;
+  bottom: 15px;
+  right: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -245,8 +240,4 @@
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #9F221C;
-}
-
-.portfolio .portfolio-wrap {
-  position: center;
 }
