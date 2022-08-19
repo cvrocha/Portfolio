@@ -1,12 +1,10 @@
-//----------Variaveis----------
-@import "variables.scss";
-
+@import "/assets/scss/variables.scss";
 
 /**
 * Desktop Navigation 
 */
 .icone-menu {
-	color: #9F221C;
+	color: $color-primary;
 }
 .navbar {
 	text-shadow: 1px 2px 2px black;

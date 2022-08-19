@@ -1,6 +1,3 @@
-//----------Variaveis----------
-@import "variables.scss";
-
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
@@ -12,16 +9,25 @@
 		background: rgba(255, 255, 255, 0.08);
 		transition: ease-in-out 0.3s;
 		.icon-leaning1{
-			color: #F7DF1E;
+			color: blue;
+			&::before{
+				color: #F7DF1E;
+			}
 		}
 		.icon-leaning2{
-			color: #88C043;
+			&::before{
+				color: #88C043;
+			}
 		}
 		.icon-leaning3{
-			color: #3cd6bf;
+			&::before{
+				color: #3cd6bf;
+			}
 		}
 		.icon-leaning4{
-			color: #247ba0;
+			&::before{
+				color: #247ba0;
+			}
 		}
 		i {
 			font-size: 32px;

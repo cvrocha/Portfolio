@@ -10,14 +10,6 @@
   color: #fff;
   z-index: 999999;
 }
-
-@media (max-width: 992px) {
-  .credits {
-    text-align: center;
-    padding: 5px;
-    background: rgba(43, 0, 124, 0);
-  }
-}
 .credits a {
   color: #9F221C;
   -webkit-transition: 1s;
@@ -31,13 +23,18 @@
   font-weight: 600;
   font-family: "Barlow", sans-serif;
 }
-
 .credits a:hover {
   color: #fff;
   font-size: 15px;
 }
 
-html,
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  background: 0, 0, 0, 0;
+  color: rgb(255, 255, 255);
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -45,17 +42,23 @@ body {
   color: rgb(255, 255, 255);
 }
 
-h1,
-h2 {
+h1 {
   font-weight: 500;
   margin: 0em 0;
-}
-
-h1 {
   font-size: 3.5em;
 }
 
 h2 {
+  font-weight: 500;
+  margin: 0em 0;
   color: rgb(255, 255, 255);
   font-size: 1em;
+}
+
+@media (max-width: 992px) {
+  .credits {
+    text-align: center;
+    padding: 5px;
+    background: rgba(43, 0, 124, 0);
+  }
 }
