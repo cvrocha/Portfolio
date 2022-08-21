@@ -11,7 +11,7 @@
 			margin: 0 auto;
 			width: 64px;
 			height: 64px;
-			background: #9F221C;
+			background: $color-primary;
 			border-radius: 5px;
 			transition: all .3s ease-out 0s;
 			display: flex;
@@ -50,15 +50,15 @@
 			margin-bottom: 0;
 		}
 		&:hover {
-			background: #9F221C;
-			border-color: #9F221C;
+			background: $color-primary;
+			border-color: $color-primary;
 			.icon {
 				background: #fff;
 				i {
-					color: #9F221C;
+					color: $color-primary;
 				}
 				&::before {
-					background: #9F221C;
+					background: $color-primary;
 				}
 			}
 			h4 {

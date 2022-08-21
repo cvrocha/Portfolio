@@ -28,9 +28,9 @@
 .loader-wrapper {
 	--line-width: 5px;
 	--curtain-color: #000000;
-	--outer-line-color: #9F221C;
+	--outer-line-color: $color-primary;
 	--inner-line-color: #ffffff;
-	--middle-line-color: #9F221C;
+	--middle-line-color: $color-primary;
 	position: fixed;
 	top: 0;
 	left: 0;

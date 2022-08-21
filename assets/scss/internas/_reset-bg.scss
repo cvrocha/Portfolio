@@ -19,10 +19,10 @@ body {
 	}
 }
 a {
-	color: #9F221C;
+	color: $color-primary;
 	text-decoration: none;
 	&:hover {
-		color: #9F221C;
+		color: $color-primary;
 		text-decoration: none;
 	}
 }
