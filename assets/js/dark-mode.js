@@ -5,3 +5,16 @@ function changeToDarkMode(settings) {
    element.classList.toggle("smooth-transition");
    }
 }
+
+
+const modeSwitch = body.querySelector(".toggle-switch");
+
+modeSwitch.addEventListener("click", () => {
+   body.classList.toggle("dark");
+
+   if (body.classList.contains("dark")) {
+      modeText.innerText = "Light mode";
+   } else {
+      modeText.innerText = "Dark mode";
+   }
+});
