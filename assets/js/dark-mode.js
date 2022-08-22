@@ -6,9 +6,7 @@ function changeToDarkMode(settings) {
    }
 }
 
-
 const modeSwitch = body.querySelector(".toggle-switch");
-
 modeSwitch.addEventListener("click", () => {
    body.classList.toggle("dark");
 

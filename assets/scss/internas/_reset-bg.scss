@@ -25,26 +25,13 @@
 		color: white;  
 	}
 	}
-	
-
-	.menu-bar .bottom-content .toggle-switch {
-		position: absolute;
-		right: 0;
-		height: 100%;
-		min-width: 60px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 6px;
-		cursor: pointer;
-	}
-	.toggle-switch .switch {
+  .switch {
 		position: relative;
 		height: 22px;
 		width: 40px;
 		border-radius: 25px;
-		background-color: var(--toggle-color);
-		transition: var(--tran-05);
+		background-color: #ddd;
+		transition: all 0.3s ease;
 	}
 
 	.switch::before {
@@ -56,8 +43,8 @@
 		top: 50%;
 		left: 5px;
 		transform: translateY(-50%);
-		background-color: var(--sidebar-color);
-		transition: var(--tran-04);
+		background-color: #fff;
+		transition: all 0.3s ease;
 	}
 
 	body.dark .switch::before {
