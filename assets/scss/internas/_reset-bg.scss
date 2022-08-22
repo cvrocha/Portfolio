@@ -1,23 +1,54 @@
-body {
-	font-family: "open sans", sans-serif;
-	background-color: black;
-	color: #fff;
-	position: relative;
-	background: transparent;
-	&::before {
-		content: '';
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		z-index: -1;
-		background-image: linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url(https://user-images.githubusercontent.com/62439381/185196091-7418b1b1-92fa-4f86-b08e-f0c8bf7706dd.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
+@media screen and (prefers-color-scheme: light) {
+	body {  
+		background-color: white;
+		color: black;  
 	}
-}
+		
+		.dark-mode {
+		background-color: black;
+		color: white;
+	}
+	
+	}
+	
+	.smooth-transition {
+		transition: background-color 300ms;
+	}
+	
+	@media screen and (prefers-color-scheme: dark) {
+	.dark-mode {
+		background-color: white;
+		color: black;
+	}
+	body {  
+		background-color: black;
+		color: white;  
+	}
+	}
+	
+
+
+// body {
+// 	font-family: "open sans", sans-serif;
+// 	background-color: black;
+// 	color: #fff;
+// 	position: relative;
+// 	background: transparent;
+// 	&::before {
+// 		content: '';
+// 		position: fixed;
+// 		top: 0;
+// 		left: 0;
+// 		height: 100%;
+// 		width: 100%;
+// 		z-index: -1;
+// 		background: rgb(0,184,238);
+// 		background-image: linear-gradient( 90deg, rgba(0,184,238, 0.5), rgba(3,111,158, 0.4) ), url(https://user-images.githubusercontent.com/62439381/185196091-7418b1b1-92fa-4f86-b08e-f0c8bf7706dd.jpg);
+// 		background-size: cover;
+// 		background-repeat: no-repeat;
+// 		background-position: center;
+// 	}
+// }
 a {
 	color: $color-primary;
 	text-decoration: none;
