@@ -3,19 +3,15 @@
 		background-color: white;
 		color: black;  
 	}
-		
-		.dark-mode {
+	.dark-mode {
 		background-color: black;
 		color: white;
 	}
-	
-	}
-	
-	.smooth-transition {
-		transition: background-color 300ms;
-	}
-	
-	@media screen and (prefers-color-scheme: dark) {
+}
+.smooth-transition {
+	transition: background-color 300ms;
+}
+@media screen and (prefers-color-scheme: dark) {
 	.dark-mode {
 		background-color: white;
 		color: black;
@@ -24,7 +20,7 @@
 		background-color: black;
 		color: white;  
 	}
-	}
+}
   // .switch {
 	// 	position: relative;
 	// 	height: 22px;
