@@ -12,7 +12,6 @@
 
   <!-- Favicons -->
   <link href="https://user-images.githubusercontent.com/62439381/185481343-f0fb8c86-f572-48b0-b40a-de29c88f3b1c.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
   
   <!-- Add icon library -->
@@ -24,17 +23,16 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-
-  <link rel="stylesheet" href="https://kk-designs.github.io/dark-mode/dark-mode.css">
   <script src="https://kit.fontawesome.com/ca211b80b7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 <body>
 
@@ -42,12 +40,11 @@
 </div>
   <header id="header">
     <div class="container">
-      <h1><a href="index.html" class="bx-flashing-hover"> Caio Rocha</a></h1>
+      <h1><a href="index.html" class="bx-flashing-hover">Caio Rocha</a></h1>
       <h2 class="ml11">Eu sou
         <span href="index.html" class="txt-rotate" data-period="2000"
           data-rotate='[ "Desenvolvedor web",  "Front-end", "Designer"]'></span>
       </h2>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <nav id="navbar" class="navbar">
         <!-- ======= Hero Section ======= -->
@@ -57,10 +54,9 @@
           <span><i class="fas fa-graduation-cap icone-menu" ;></i><li><a class="nav-link" href="#resume"> Formação</a></li></span>
           <span><i class="fas fa-folder-open icone-menu" ;></i><li><a class="nav-link" href="#portfolio">Portfólio</a></li></span>
           <span><i class="fas fa-address-book icone-menu" ;></i><li><a class="nav-link" href="#">Contato</a></li></span>
-          <!-- <span onclick='changeToDarkMode();'></span> -->
-          <label onclick='changeToDarkMode();' class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
+          <input onclick="myFunction()" id="switch" type="checkbox">
+          <label class="content" for="switch">
+              <div class="circle"></div>
           </label>
           <!-- #contact -->
         </ul>
@@ -664,22 +660,22 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/assets/vendor/php-email-form/validate.js"></script>
-  <script src="/assets/vendor/purecounter/purecounter.js"></script>
-  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 
 <!-- PreLoader -->
-<script src="/assets/js/custom.js"></script>
+<script src="assets/js/custom.js"></script>
 
 <!-- DarkMode -->
-<script src="/assets/js/dark-mode.js"></script>
+<script src="assets/js/dark-mode.js"></script>
 
 <!-- Add loader-wrapper just below the body tag -->
 <div class="loader-wrapper">
