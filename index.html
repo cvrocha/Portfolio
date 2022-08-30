@@ -51,7 +51,7 @@
           <span><i class="fas fa-exclamation-circle icone-menu" ;></i><li><a class="nav-link" href="#about"> Sobre</a></li></span>
           <span><i class="fas fa-graduation-cap icone-menu" ;></i><li><a class="nav-link" href="#resume"> Formação</a></li></span>
           <span><i class="fas fa-folder-open icone-menu" ;></i><li><a class="nav-link" href="#portfolio">Portfólio</a></li></span>
-          <span><i class="fas fa-address-book icone-menu" ;></i><li><a class="nav-link" href="#">Contato</a></li></span>
+          <span><i class="fas fa-address-book icone-menu" ;></i><li><a class="nav-link" href="#contact">Contato</a></li></span>
           <span><input onclick="myFunction()" id="switch" type="checkbox">
             <label class="content-dark" for="switch">
                 <div class="circle">
@@ -618,12 +618,13 @@
               <a href="https://www.linkedin.com/in/caiovrocha" target="_blank" class="linkedin"><i
                   class="bi bi-linkedin"></i></a>
               <a href="https://github.com/cvrocha" target="_blank" class="github"><i class="bi bi-github"></i></a>
+              <a href="https://formsubmit.co/el/caiovrocha.contato@gmail.com" target="_blank" ><i class='bx bxs-envelope'></i></a>
             </div>
           </div>
         </div>
       </div>
 
-      <form action="processa.php" method="POST" role="form" class="php-email-form mt-4">
+      <form action="https://formsubmit.co/caiovrocha.contato@gmail.com" enctype="multipart/form-data" method="POST" role="form" class="php-email-form mt-4">
         <div class="row">
 
           <div class="col-md-6 form-group">
@@ -636,7 +637,7 @@
         </div>
 
         <div class="form-group mt-3">
-          <input type="text" class="form-control" name="fone" id="f" placeholder="Digite seu telefone (00) 9 0000-0000" required>
+          <input type="hidden" name="_subject" value="Novo envio!" placeholder="Assunto">
         </div>
 
         <div class="form-group mt-3">
@@ -644,13 +645,13 @@
         </div>
         <div class="my-3">
           <div class="loading">Carregando...</div>
-          <div class="error-message">Tente novamente</div>
-          <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+          <div class="error-message d-none">Tente novamente</div>
+          <div class="sent-message error-message">Sua mensagem foi enviada. Obrigado!</div>
         </div>
+        <input type="hidden" name="_captcha" value="false">
         <div class="text-center"><button type="submit">Enviar</button></div>
       </form>
-
-    </div>
+      </div>
   </section><!-- End Contact Section -->
 
 
