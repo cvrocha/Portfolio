@@ -20,6 +20,9 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +36,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   
 </head>
-<body>
+<body id="body" class="dark-mode">
 
 <div class="container">
 </div>
@@ -48,19 +51,25 @@
         <!-- ======= Hero Section ======= -->
         <ul>
           <span><i class="fas fa-home icone-menu" ;></i><li><a class="nav-link active" href="#header"> Início</a></li></span>
-          <span><i class="fas fa-exclamation-circle icone-menu" ;></i><li><a class="nav-link" href="#about"> Sobre</a></li></span>
+          <span><i class="fas fa-address-card icone-menu" ;></i><li><a class="nav-link" href="#about"> Sobre</a></li></span>
           <span><i class="fas fa-graduation-cap icone-menu" ;></i><li><a class="nav-link" href="#resume"> Formação</a></li></span>
           <span><i class="fas fa-folder-open icone-menu" ;></i><li><a class="nav-link" href="#portfolio">Portfólio</a></li></span>
-          <span><i class="fas fa-address-book icone-menu" ;></i><li><a class="nav-link" href="#contact">Contato</a></li></span>
-          <span><input onclick="myFunction()" id="switch" type="checkbox">
-            <label class="content-dark" for="switch">
-                <div class="circle">
-                </div>
-          </label></span>
+          <span><i class="fas fa-envelope icone-menu" ;></i><li><a class="nav-link" href="#contact">Contato</a></li></span>
+          <span><button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+          </span>
+          <span id="google_translate_element"></span>
           <!-- #contact -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+      
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'br'}, 'google_translate_element');
+        }
+      </script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
       <div class="social-links">
         <a href="https://www.linkedin.com/in/caiovrocha" target="_blank" class="linkedin"><i
@@ -615,10 +624,9 @@
             <i class="bx bx-share-alt"></i>
             <h3>Mídias Sociais</h3>
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/caiovrocha" target="_blank" class="linkedin"><i
-                  class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/cvrocha" target="_blank" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://formsubmit.co/el/caiovrocha.contato@gmail.com" target="_blank" ><i class='bi bi-mailbox2'></i></a>
+              <a href="https://www.linkedin.com/in/caiovrocha" target="_blank" class="linkedin"><i class='bx bxl-linkedin-square' ></i></a>
+              <a href="https://github.com/cvrocha" target="_blank" class="github"><i class='bx bxl-github'></i></a>
+              <a href="https://formsubmit.co/el/caiovrocha.contato@gmail.com" target="_blank" ><i class='fas fa-envelope'></i></a>
             </div>
           </div>
         </div>
@@ -628,7 +636,7 @@
         <div class="row">
 
           <div class="col-md-6 form-group">
-            <input type="text" name="nome" class="form-control" id="n" placeholder=" Digite seu nome completo" required>
+            <input type="text" name="nome" class="form-control" id="n" placeholder=" Digite seu nome" required>
           </div>
 
           <div class="col-md-6 form-group mt-3 mt-md-0">
@@ -669,16 +677,14 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="https://kit.fontawesome.com/ca211b80b7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
   <!-- PreLoader -->
   <script src="assets/js/custom.js"></script>
-
   <!-- DarkMode -->
   <script src="assets/js/dark-mode.js"></script>
-
 <!-- Add loader-wrapper just below the body tag -->
 <div class="loader-wrapper">
   <div class="loader"></div>
