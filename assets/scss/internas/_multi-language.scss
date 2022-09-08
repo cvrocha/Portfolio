@@ -12,3 +12,28 @@
       display: none;
     }
 }
+.container-language{
+	position: relative;
+  right: 22px;
+  top: 2px;
+	.globe-language{
+		background: transparent;
+			color: $color-primary;
+			border: none;
+			border-bottom: none;
+			text-shadow: 1px 2px 2px black;
+			&::after{
+				text-shadow: 1px 2px 2px black;
+			}
+	}
+	.conteiner-item-language{  
+		.item-language {
+			&:hover{ 
+				background-color: #c6c6c6;
+			}
+			&::before{
+			  width: 0;
+      }
+		}
+	}
+}
