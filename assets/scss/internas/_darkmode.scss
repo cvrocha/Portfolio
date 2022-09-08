@@ -1,31 +1,55 @@
-$dark-color: #111;
-$light-color: #eee;
+.button-dk{
+  height: 30px;
+  width: 30px;
+  img.icon-lightmode {   
+    cursor: pointer;
+    position: absolute;
+    height: 20px;
+    filter: invert(14%) sepia(86%) saturate(2812%) hue-rotate(353deg) brightness(101%) contrast(86%);
+  } 
+  img.icon-darkmode {   
+    cursor: pointer;
+    position: absolute;
+    height: 20px;
+    filter: invert(66%) sepia(74%) saturate(4771%) hue-rotate(159deg) brightness(91%) contrast(101%);
+  } 
+  &::before{
+    width: 0 !important;
+  }
+}
+.light-mode{
+  display: block;
+  transition: .6s !important;
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: #8de2ff;
+  background-image: linear-gradient(90deg, rgba(141,226,255,.6),rgba(149,156,255,.8)), url(https://user-images.githubusercontent.com/62439381/185196091-7418b1b1-92fa-4f86-b08e-f0c8bf7706dd.jpg);
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+	}
 
-
-// body.dark-mode {
-//   &::before {
-// 	 	content: '';
-// 	 	position: fixed;
-// 	 	top: 0;
-// 	 	left: 0;
-// 	 	height: 100%;
-// 	 	width: 100%;
-// 	 	z-index: -1;
-// 	 	background: rgb(0,184,238);
-// 	 	background-image: linear-gradient( 90deg, rgba(0,184,238, 0.5), rgba(3,111,158, 0.4) ), url(https://user-images.githubusercontent.com/62439381/185196091-7418b1b1-92fa-4f86-b08e-f0c8bf7706dd.jpg);
-// 	 	background-size: cover;
-// 	 	background-repeat: no-repeat;
-// 	 	background-position: center;
-// 	 }
-//   button {
-//     background-color: $light-color;
-//     color: $dark-color;
-//   }
-// }
-// body.light-mode {
-//   background-color: $light-color;
-//   button {
-//     background-color: $dark-color;
-//     color: $light-color;
-//   }
-// }
+.dark-mode {
+  transition: .6s !important;
+	position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+	width: 100vw;
+  z-index: -1;
+	background: #0023ff;
+  background-image: linear-gradient(90deg, rgba(15,29,116,.4), rgba(0,46,66,.8)), url(https://user-images.githubusercontent.com/62439381/185196091-7418b1b1-92fa-4f86-b08e-f0c8bf7706dd.jpg);
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}

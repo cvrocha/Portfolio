@@ -11,7 +11,6 @@
 	text-indent: 20px;
 	right: 20px;
 	ul {
-		text-shadow: 1px 2px 1px black;
 		margin: 0px;
 		padding: 0;
 		display: flex;
@@ -175,29 +174,6 @@
 		a {
 			&:before {
 				bottom: 10px;
-			}
-		}
-	}
-}
-.container-language{
-	position: relative;
-  right: 22px;
-  top: 2px;
-	.globe-language{
-		background: transparent;
-			color: $color-primary;
-			border: none;
-			border-bottom: none;
-			text-shadow: 1px 2px 1px #000;
-			&::after{
-				text-shadow: 1px 2px 1px #000;
-			}
-	}
-	.conteiner-item-language{  
-		.item-language {
-			&:hover, &::before{
-				width: 0 !important;
-				background-color: #c6c6c6;
 			}
 		}
 	}
