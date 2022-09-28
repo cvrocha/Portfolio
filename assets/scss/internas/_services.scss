@@ -11,7 +11,7 @@
 			margin: 0 auto;
 			width: 64px;
 			height: 64px;
-			background: $color-primary;
+			background: var(--color-primary);
 			border-radius: 5px;
 			transition: all .3s ease-out 0s;
 			display: flex;
@@ -50,15 +50,15 @@
 			margin-bottom: 0;
 		}
 		&:hover {
-			background: $color-primary;
-			border-color: $color-primary;
+			background: var(--color-primary);
+			border-color: var(--color-primary);
 			.icon {
 				background: #fff;
 				i {
-					color: $color-primary;
+					color: var(--color-primary);
 				}
 				&::before {
-					background: $color-primary;
+					background: var(--color-primary);
 				}
 			}
 			h4 {

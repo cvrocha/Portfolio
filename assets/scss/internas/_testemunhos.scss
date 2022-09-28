@@ -63,7 +63,7 @@
 			background-color: rgba(255, 255, 255, 0.3);
 		}
 		.swiper-pagination-bullet-active {
-			background-color: $color-primary;
+			background-color: var(--color-primary);
 		}
 	}
 }

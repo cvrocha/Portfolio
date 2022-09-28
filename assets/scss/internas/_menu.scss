@@ -2,7 +2,7 @@
 * Desktop Navigation 
 */
 .icone-menu {
-	color: $color-primary;
+	color: var(--color-primary);
 }
 .navbar {
 	text-shadow: 1px 2px 2px black;
@@ -64,7 +64,7 @@
 			margin-left: 5px;
 		}
 		&:before {
-			border-bottom: 3px solid $color-primary;
+			border-bottom: 3px solid var(--color-primary);
 			text-shadow: 1px 2px 1px black;
 			content: "";
 			position: absolute;
@@ -72,7 +72,7 @@
 			height: 4px;
 			bottom: 6px;
 			left: 26px;
-			background-color: $color-primary;
+			background-color: var(--color-primary);
 			visibility: hidden;
 			width: 0px;
 			transition: all 0.3s ease-in-out 0s;
@@ -148,7 +148,7 @@
 		left: 15px;
 		overflow-y: auto;
 		transition: 0.3s;
-		border: 3px solid $color-primary;
+		border: 3px solid var(--color-primary);
 		z-index: 999;
 	}
 	li {

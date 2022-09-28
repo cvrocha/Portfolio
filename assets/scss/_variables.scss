@@ -1,4 +1,12 @@
 //----------Variaveis----------
-$color-primary: #9F221C!default; // Cor principal dos detalhes
-$color-secondary: #801c17 !default; // Cor principal dos detalhes
+$color-primary: #9F221C!default; // Cor principal dos detalhes #00A3D4
+$color-secondary: #801c17 !default; // Cor principal dos detalhes #00789c 
 // $red-padrao: #9F221C !default;
+
+:root {
+  --color-primary: #{$color-primary}; 
+  --color-secondary: #{$color-secondary}; 
+}
+
+// var(--color-primary); 
+// var(--color-secondary); 

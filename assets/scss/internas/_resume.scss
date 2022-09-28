@@ -20,7 +20,7 @@
 			font-weight: 600;
 			text-transform: uppercase;
 			font-family: "Poppins", sans-serif;
-			color: $color-primary;
+			color: var(--color-primary);
 			margin-bottom: 10px;
 		}
 		h5 {
@@ -48,8 +48,8 @@
 			border-radius: 50px;
 			left: -9px;
 			top: 0;
-			background: $color-primary;
-			border: 2px solid $color-primary;
+			background: var(--color-primary);
+			border: 2px solid var(--color-primary);
 		}
 	}
 }

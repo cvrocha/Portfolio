@@ -30,7 +30,7 @@
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: $color-primary;
+  background: var(--color-primary);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -130,7 +130,7 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: $color-primary;
+  color: var(--color-primary);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -224,7 +224,7 @@
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: $color-primary;
+  background-color: var(--color-primary);
 }
 
 .portifolio__link:hover,

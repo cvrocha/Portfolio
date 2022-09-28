@@ -8,4 +8,6 @@ function changeMode() {
   element.classList.toggle("light-mode");
   Img.classList.toggle("icon-darkmode");
   Img.classList.toggle("icon-lightmode");
+  document.documentElement.style.setProperty('--color-primary', '#00A3D4');
+  document.documentElement.style.setProperty('--color-secondary', '#00789c');
 }
