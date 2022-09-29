@@ -6,7 +6,7 @@
 ## Link de demonstração
 [Clique Aqui](https://cvrocha.github.io/Portfolio/)
 
-![cvrocha github io_Portfolio_ (2)](https://user-images.githubusercontent.com/62439381/185658312-f97b3c8f-612a-4ef5-9d86-0ec3a32b8626.png)
+![cvrocha github io_Portfolio_ (2)](https://user-images.githubusercontent.com/62439381/193061380-3354da1b-fb43-4e14-a0a1-c6d9d6b338cd.png)
 
 
 Descrição adicional sobre o projeto e suas características.
