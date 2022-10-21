@@ -29,8 +29,8 @@ function changeMode() {
   }
   bg.style.setProperty("--color-primary", color);
   bg2.style.setProperty("--color-secondary", color);
+  localStorage.setItem("--color-secondary", "--color-primary");
 }
-
 
 // document.documentElement.style.setProperty('--color-primary', '#00A3D4');
   // document.documentElement.style.setProperty('--color-secondary', '');
