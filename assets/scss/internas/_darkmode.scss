@@ -21,7 +21,7 @@ body {
     width: 0 !important;
   }
 }
-.light-mode{
+body.light-mode{
   display: block;
   transition: .6s !important;
 	position: fixed;
@@ -38,9 +38,10 @@ body {
     -o-background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    transition: ease-in-out 0.4s;
 	}
 
-.dark-mode {
+body.dark-mode {
   transition: .6s !important;
 	position: fixed;
   top: 0;
@@ -56,4 +57,5 @@ body {
     -o-background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    transition: ease-in-out 0.4s;
 }

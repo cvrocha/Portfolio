@@ -3,16 +3,12 @@
 --------------------------------------------------------------*/
 /* Header Top */
 #header {
-	transition: ease-in-out 0.3s;
 	position: cover;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	z-index: 997;
 	overflow-y: auto;
-	* {
-		transition: ease-in-out 0.4s;
-	}
 	h1 {
 		text-shadow: 20px 20px 5px black;
 		font-size: 60px;

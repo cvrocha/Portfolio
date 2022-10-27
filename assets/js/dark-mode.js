@@ -1,13 +1,14 @@
-var onImg  = "https://user-images.githubusercontent.com/62439381/188936579-0d3bcab8-26b9-40fa-ac98-7084037729fe.svg";
-var offImg = "https://user-images.githubusercontent.com/62439381/188938518-37e134bc-fd6b-4f10-b926-c9dcff60f4db.svg";
+let onImg  = "https://user-images.githubusercontent.com/62439381/188936579-0d3bcab8-26b9-40fa-ac98-7084037729fe.svg";
+let offImg = "https://user-images.githubusercontent.com/62439381/188938518-37e134bc-fd6b-4f10-b926-c9dcff60f4db.svg";
 
 
 let color = "#9F221C";
-let color2 = "#9F221C";
+let color2 = "#801c17";
 
 function changeMode() {
   let Img = document.getElementById("icon-darkmode");
-  var element = document.body;  
+  let element = document.body;  
+  let darkMode = false;
   element.classList.toggle("dark-mode");
   element.classList.toggle("light-mode");
   Img.classList.toggle("icon-darkmode");
@@ -29,8 +30,17 @@ function changeMode() {
   }
   bg.style.setProperty("--color-primary", color);
   bg2.style.setProperty("--color-secondary", color);
-  localStorage.setItem("--color-secondary", "--color-primary");
+  
+  // na entrada, obtenha o valor e salve-o como 'storedValue'
+  let userColor = document.getElementsByClassName('button-dk').value;
+  localStorage.setItem('storedValue', document.body.style.backgroundColor = userColor);
+  
+  if(localStorage.storedValue) {
+    document.getElementsByClassName('button-dk').value = localStorage.storedValue;
+    document.body.style.backgroundColor = localStorage.storedValue;
+  }
 }
 
 // document.documentElement.style.setProperty('--color-primary', '#00A3D4');
   // document.documentElement.style.setProperty('--color-secondary', '');
+  
