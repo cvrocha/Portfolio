@@ -126,7 +126,7 @@
 			color: #fff;
 			padding: 10px 15px;
 			&:focus {
-				background-color: rgba(255, 255, 255, 0.11);
+				background-color: rgba(255, 255, 255, 0.2);
 			}
 			&::-webkit-input-placeholder {
 				color: rgba(255, 255, 255, 0.3);
@@ -139,6 +139,16 @@
 			&::placeholder {
 				color: rgba(255, 255, 255, 0.3);
 				opacity: 1;
+			}
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover,
+			&:-webkit-autofill:focus,
+			&:-webkit-autofill:active {
+				transition: background-color 5000s ease-in-out 0s;
+				color: #fff;
+				opacity: 1;
+				-webkit-text-fill-color: #fff !important;
+				caret-color: #fff;
 			}
 		}
 		textarea {
@@ -151,7 +161,7 @@
 			color: #fff;
 			padding: 12px 15px;
 			&:focus {
-				background-color: rgba(255, 255, 255, 0.11);
+				background-color: rgba(255, 255, 255, 0.2);
 			}
 			&::-webkit-input-placeholder {
 				color: rgba(255, 255, 255, 0.3);
@@ -164,6 +174,16 @@
 			&::placeholder {
 				color: rgba(255, 255, 255, 0.3);
 				opacity: 1;
+			}
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover,
+			&:-webkit-autofill:focus,
+			&:-webkit-autofill:active {
+				transition: background-color 5000s ease-in-out 0s;
+				color: #fff;
+				opacity: 1;
+				-webkit-text-fill-color: #fff !important;
+				caret-color: #fff;
 			}
 		}
 		button[type="submit"] {
