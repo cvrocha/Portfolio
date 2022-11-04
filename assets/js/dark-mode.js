@@ -30,17 +30,7 @@ function changeMode() {
   }
   bg.style.setProperty("--color-primary", color);
   bg2.style.setProperty("--color-secondary", color);
-  
-  // na entrada, obtenha o valor e salve-o como 'storedValue'
-  let userColor = document.getElementsByClassName('button-dk').value;
-  localStorage.setItem('storedValue', document.body.style.backgroundColor = userColor);
-  
-  if(localStorage.storedValue) {
-    document.getElementsByClassName('button-dk').value = localStorage.storedValue;
-    document.body.style.backgroundColor = localStorage.storedValue;
-  }
 }
-
 // document.documentElement.style.setProperty('--color-primary', '#00A3D4');
   // document.documentElement.style.setProperty('--color-secondary', '');
   
