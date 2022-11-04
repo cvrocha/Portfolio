@@ -1,7 +1,7 @@
 	// $line-width: 5px !default; // Espaçamento entre as linhas
-	$color-outer-preloader: #9F221C !default; // Cor da linha da esquerda
+	// $color-outer-preloader: #9F221C !default; // Cor da linha da esquerda
 	$color-inner-preloader: #ffffff !default; // Cor da linha da meio
-	$color-middle-preloader: #9F221C !default; // Cor da linha da direita
+	// $color-middle-preloader: #9F221C !default; // Cor da linha da direita
 	$color-bg-preloader: #000000 !default; // Cor do background
 
 @-webkit-keyframes spin {
@@ -62,7 +62,7 @@
 	height: 150px;
 	margin: -75px 0 0 -75px;
 	border: 5px solid transparent;
-	border-top-color: $color-outer-preloader;
+	border-top-color: var(--color-primary);
 	border-radius: 100%;
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
@@ -88,7 +88,7 @@
 		right: 14px;
 		bottom: 14px;
 		border: 5px solid transparent;
-		border-top-color: $color-outer-preloader;
+		border-top-color: var(--color-primary);
 		border-radius: 100%;
 		-webkit-animation: spin 1.5s linear infinite;
 		animation: spin 1.5s linear infinite;

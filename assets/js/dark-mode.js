@@ -9,8 +9,8 @@ function changeMode() {
   let Img = document.getElementById("icon-darkmode");
   let element = document.body;  
   let darkMode = false;
-  element.classList.toggle("dark-mode");
-  element.classList.toggle("light-mode");
+  let darktheme = element.classList.toggle("dark-mode");
+  let lighttheme =element.classList.toggle("light-mode");
   Img.classList.toggle("icon-darkmode");
   Img.classList.toggle("icon-lightmode");
   
@@ -19,18 +19,23 @@ function changeMode() {
 
   if (color === "#9F221C") { 
     color = "#00A3D4"; 
+    localStorage.setItem("changeMode", "dark-mode");
   } else if (color === "#00A3D4") {  
     color = "#9F221C"; 
+    localStorage.setItem("changeMode", "light-mode");
   }
   
   if (color2 === "#801c17") { 
     color2 = "#00789c"; 
+    localStorage.setItem("changeMode", "dark-mode");
   } else if (color2 === "#00789c") {  
     color2 = "#801c17"; 
+    localStorage.setItem("changeMode", "light-mode");
   }
   bg.style.setProperty("--color-primary", color);
   bg2.style.setProperty("--color-secondary", color);
 }
 // document.documentElement.style.setProperty('--color-primary', '#00A3D4');
   // document.documentElement.style.setProperty('--color-secondary', '');
-  
+// Store
+JSON.stringify(changeMode())
