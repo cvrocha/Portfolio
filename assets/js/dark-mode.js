@@ -1,41 +1,85 @@
-let onImg  = "https://user-images.githubusercontent.com/62439381/188936579-0d3bcab8-26b9-40fa-ac98-7084037729fe.svg";
-let offImg = "https://user-images.githubusercontent.com/62439381/188938518-37e134bc-fd6b-4f10-b926-c9dcff60f4db.svg";
+let darkImg  = "https://user-images.githubusercontent.com/62439381/188936579-0d3bcab8-26b9-40fa-ac98-7084037729fe.svg";
+let lightImg = "https://user-images.githubusercontent.com/62439381/188938518-37e134bc-fd6b-4f10-b926-c9dcff60f4db.svg";
 
 
-let color = "#9F221C";
-let color2 = "#801c17";
+let primaryColor = "#9F221C";
+let secondaryColor = "#801c17";
 
 function changeMode() {
-  let Img = document.getElementById("icon-darkmode");
-  let element = document.body;  
-  let darkMode = false;
-  let darktheme = element.classList.toggle("dark-mode");
-  let lighttheme =element.classList.toggle("light-mode");
-  Img.classList.toggle("icon-darkmode");
-  Img.classList.toggle("icon-lightmode");
+  const colorModeToggleButton = document.getElementById("icon-toggle-color");
+  const element = document.body;  
+  const colorMode = localStorage.getItem('colorMode')
+  element.classList.toggle("dark-mode");
+  element.classList.toggle("light-mode");
   
-  let bg = document.querySelector(':root');
-  let bg2 = document.querySelector(':root');
-
-  if (color === "#9F221C") { 
-    color = "#00A3D4"; 
-    localStorage.setItem("changeMode", "dark-mode");
-  } else if (color === "#00A3D4") {  
-    color = "#9F221C"; 
-    localStorage.setItem("changeMode", "light-mode");
+  colorModeToggleButton.classList.toggle("icon-darkmode");
+  colorModeToggleButton.classList.toggle("icon-lightmode");
+  const lightModeColors = {
+    primary: "#9F221C",
+    secondary: "#801c17"
   }
   
-  if (color2 === "#801c17") { 
-    color2 = "#00789c"; 
-    localStorage.setItem("changeMode", "dark-mode");
-  } else if (color2 === "#00789c") {  
-    color2 = "#801c17"; 
-    localStorage.setItem("changeMode", "light-mode");
+  const darkModeColors = {
+    primary: "#00A3D4",
+    secondary: "#00789c"
   }
-  bg.style.setProperty("--color-primary", color);
-  bg2.style.setProperty("--color-secondary", color);
+  
+  const bg = document.querySelector(':root');
+  
+  if (colorMode === 'dark-mode') {
+    localStorage.setItem('colorMode', 'light-mode')
+    primaryColor = lightModeColors.primary
+    secondaryColor = lightModeColors.secondary
+    colorModeToggleButton.src = lightImg
+  } else {
+    localStorage.setItem('colorMode', 'dark-mode')
+    primaryColor = darkModeColors.primary
+    secondaryColor = darkModeColors.secondary
+    colorModeToggleButton.src = darkImg
+  }
+  
+  bg.style.setProperty("--color-primary", primaryColor);
+  bg.style.setProperty("--color-secondary", secondaryColor);
 }
 // document.documentElement.style.setProperty('--color-primary', '#00A3D4');
   // document.documentElement.style.setProperty('--color-secondary', '');
 // Store
-JSON.stringify(changeMode())
+
+function initializeColorMode () {
+  let colorMode = localStorage.getItem('colorMode')
+  const bg = document.querySelector(':root');
+  const colorModeToggleButton = document.getElementById('icon-toggle-color')
+  
+  const lightModeColors = {
+    primary: "#9F221C",
+    secondary: "#801c17"
+  }
+  
+  const darkModeColors = {
+    primary: "#00A3D4",
+    secondary: "#00789c"
+  }
+  
+  if (colorMode === 'dark-mode') {
+    primaryColor = darkModeColors.primary
+    secondaryColor = darkModeColors.secondary
+    document.body.classList.add('dark-mode')
+    document.body.classList.remove('light-mode')
+    colorModeToggleButton.src = darkImg
+    colorModeToggleButton.classList.add('icon-darkmode')
+    colorModeToggleButton.classList.remove('icon-lightmode')
+  } else {
+    primaryColor = lightModeColors.primary
+    secondaryColor = lightModeColors.secondary
+    document.body.classList.add('light-mode')
+    document.body.classList.remove('dark-mode')
+    colorModeToggleButton.src = lightImg
+    colorModeToggleButton.classList.add('icon-lightmode')
+    colorModeToggleButton.classList.remove('icon-darkmode')
+  }
+  
+  bg.style.setProperty("--color-primary", primaryColor);
+  bg.style.setProperty("--color-secondary", secondaryColor);
+}
+
+initializeColorMode()
