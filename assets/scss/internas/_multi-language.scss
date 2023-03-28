@@ -1,58 +1,62 @@
-.skiptranslate.goog-te-gadget{
-    div{
-      .goog-te-combo{
-        height: 25px;
-        border-radius: 5px;
-        #text{
-          display: none;
-        }
-      }
-    }
-    span{
-      display: none;
-    }
-}
-.container-language{
-	position: relative;
-  right: 22px;
-  top: 2px;
-	.globe-language{
-		background: transparent;
-			color: var(--color-primary);
-			border: none;
-			border-bottom: none;
-			text-shadow: 0px 0px 2px black;
-			&::after{
-				text-shadow: 0px 0px 2px black;
+.skiptranslate.goog-te-gadget {
+	div {
+		.goog-te-combo {
+			height: 25px;
+			border-radius: 5px;
+			#text {
+				display: none;
 			}
+		}
 	}
-	.conteiner-item-language{  
+	span {
+		display: none;
+	}
+}
+.container-language {
+	position: relative;
+	right: 22px;
+	top: 2px;
+	.globe-language {
+		background: transparent;
+		color: var(--color-primary);
+		border: none;
+		border-bottom: none;
+		text-shadow: 0px 0px 2px black;
+		&::after {
+			text-shadow: 0px 0px 2px black;
+		}
+	}
+	.conteiner-item-language {
 		.item-language {
-			&:hover{ 
+			&:hover {
 				background-color: #a9a9a9;
 			}
-			&::before{
-			  width: 0;
-      }
+			&::before {
+				width: 0;
+			}
 		}
 	}
 }
 
-.goog-text-highlight{
-background-color: transparent !important;
--webkit-box-shadow:2px 2px 4px transparent !important;;
--moz-box-shadow:2px 2px 4px transparent !important;;
-box-shadow:2px 2px 4px transparent !important;;
-box-sizing:border-box;
--webkit-box-sizing:border-box;
--moz-box-sizing:border-box;
-position:relative
+.goog-text-highlight {
+	background-color: transparent !important;
+	-webkit-box-shadow: 2px 2px 4px transparent !important;
+	-moz-box-shadow: 2px 2px 4px transparent !important;
+	box-shadow: 2px 2px 4px transparent !important;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	position: relative;
 }
 
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-ORHb,
+.skiptranslate{
+	display: none;
+}
 
-
-.dropdown-toggle::after{
-	border: solid var(--color-primary) !important; 
+.dropdown-toggle::after {
+	border: solid var(--color-primary) !important;
 	border-width: 0 3px 3px 0 !important;
 	padding: 3px !important;
 	transform: rotate(45deg) !important;
@@ -61,14 +65,14 @@ position:relative
 }
 
 @media screen and (max-width: 998px) {
-	.dropdown-toggle::after{
+	.dropdown-toggle::after {
 		transform: rotate(-45deg) !important;
 		-webkit-transform: rotate(-45deg) !important;
 		vertical-align: 0.4em !important;
 	}
 }
 @media screen and (max-width: 420px) {
-	.dropdown-toggle::after{
+	.dropdown-toggle::after {
 		vertical-align: 0.3em !important;
 	}
 }
